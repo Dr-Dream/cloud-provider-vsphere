@@ -72,7 +72,7 @@ spec:
           type: DirectoryOrCreate
         name: flexvolume-dir
       - hostPath:
-          path: /etc/kubernetes/pki
+          path: /etc/kubernetes/ssl
           type: DirectoryOrCreate
         name: k8s-certs
       - hostPath:
