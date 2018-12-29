@@ -33,6 +33,9 @@ spec:
         effect: NoSchedule
       - key: node-role.kubernetes.io/master
         effect: NoSchedule
+      - key: kubeadmNode
+        value: master
+        effect: NoSchedule
       serviceAccountName: cloud-controller-manager
       containers:
         - name: vsphere-cloud-controller-manager
